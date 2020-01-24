@@ -20,7 +20,7 @@ jobs:
       - attach_workspace:
           at: src
       - run: |
-          if [[ $(cat src/hello) == "hello world, again"]]; then
+          if [[ $(cat src/hello) == "hello world, again" ]]; then
             echo "woo";
           else
             echo "fi ends if, amazing. also you failed"; exit 123
