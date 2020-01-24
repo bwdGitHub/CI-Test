@@ -1,4 +1,4 @@
 # CI-Test
 Trial CI services
 
-[![Me](https://circleci.com/gh/bwdGitHub/CI-Test.svg?style=svg)](https://app.circleci.com/github/bwdGitHub/CI-Test/pipelines)
+Build and Test : [![Me](https://circleci.com/gh/bwdGitHub/CI-Test.svg?style=svg)](https://app.circleci.com/github/bwdGitHub/CI-Test/pipelines)
