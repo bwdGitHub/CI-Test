@@ -5,8 +5,8 @@ jobs:
     docker:
       - image: circleci/ruby:2.4.1
     steps:
-      - run: mkdir -p test
-      - checkout: test
       - run: mkdir -p src
       - run: git clone git@github.com:bwdGitHub/dummy.git src
       - run: echo "yay - cloned separate repo"
+      - run: mkdir -p test
+      - checkout test
