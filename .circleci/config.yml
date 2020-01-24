@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: mkdir -p src
-      - run: echo "hello world, again but no" > src/hello
+      - run: echo "hello world, again" > src/hello
       - persist_to_workspace:
           root: src
           paths:
