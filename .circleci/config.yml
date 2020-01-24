@@ -1,9 +1,21 @@
  # Use the first example from https://circleci.com/docs/2.0/getting-started/
- version: 2
- jobs:
-   build:
-     docker:
-       - image: circleci/ruby:2.4.1
-     steps:
-       - checkout
-       - run: foobar
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "nothing to build"
+  test:
+    docker:
+      - image: circleci/ruby:2.4.1
+    steps:
+      - checkout
+      - run: echo "nothing to test"
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test
