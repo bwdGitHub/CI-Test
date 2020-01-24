@@ -21,7 +21,7 @@ jobs:
           at: src
       - run: |
           if [[ $(cat src/hello) == "hello world, again" ]]; then
-            echo "woo";
+            echo "woo"
           else
             echo "fi ends if, amazing. also you failed"; exit 123
           fi
