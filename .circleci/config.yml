@@ -6,6 +6,9 @@ jobs:
       - image: circleci/ruby:2.4.1
     steps:
       - run: mkdir -p src
+      - add_ssh_keys:
+          fingerprints:
+            - "8a:b2:70:11:f7:9f:cd:7b:18:19:f5:a4:21:ca:50:07"
       - run: git clone git@github.com:bwdGitHub/dummy.git src
       - run: echo "yay - cloned separate repo"
       - run: mkdir -p test
