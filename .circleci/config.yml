@@ -9,4 +9,5 @@ jobs:
       - run: git clone git@github.com:bwdGitHub/dummy.git src
       - run: echo "yay - cloned separate repo"
       - run: mkdir -p test
-      - checkout test
+      - checkout:
+          path: test
