@@ -8,7 +8,7 @@ jobs:
       - run: mkdir -p src
       - add_ssh_keys:
           fingerprints:
-            - "8a:b2:70:11:f7:9f:cd:7b:18:19:f5:a4:21:ca:50:07"
+            - "df:6f:f2:88:cf:aa:59:46:bf:23:bc:37:8a:1f:45:62"
       - run: git clone git@github.com:bwdGitHub/dummy.git src
       - run: echo "yay - cloned separate repo"
       - run: mkdir -p test
