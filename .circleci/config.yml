@@ -10,7 +10,7 @@ jobs:
           fingerprints:
             - "df:6f:f2:88:cf:aa:59:46:bf:23:bc:37:8a:1f:45:62"
       - run: git clone https://github.com/bwdGitHub/dummy.git src
-      - run: echo "yay - cloned separate repo"
       - run: mkdir -p test
       - checkout:
           path: test
+      - run: python -m unittest test/test_foo.py
