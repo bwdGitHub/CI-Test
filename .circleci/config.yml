@@ -13,4 +13,4 @@ jobs:
       - run: mkdir -p test
       - checkout:
           path: test
-      - run: python -m unittest test/test_foo.py
+      - run: python test/test_foo.py
